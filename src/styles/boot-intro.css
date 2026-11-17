@@ -1,0 +1,59 @@
+.boot-intro{position:relative;min-height:100svh;background:#252423;color:#f6f4f2;overflow:clip;isolation:isolate}
+.boot-intro::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 28% 45%,#ff62590c,transparent 55%),radial-gradient(ellipse at 78% 65%,#dbf96709,transparent 50%)}
+.boot-header{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:25px 40px;gap:20px}
+.boot-header>span:nth-child(2){font-size:11px;letter-spacing:2px;font-weight:600;color:#b9afa5}
+.boot-header>button{border:0;background:none;color:#c5bdb5;min-height:44px;padding:10px;font-size:11px;letter-spacing:.3px}
+.boot-header>button:hover{color:var(--coral)}
+.boot-stage{position:absolute;inset:0;height:100svh;z-index:1;opacity:0;transition:opacity .5s;pointer-events:none}
+.boot-intro[data-boot-scene="ready"] .boot-stage{opacity:1}
+.boot-stage>canvas{display:block;width:100%;height:100%}
+.boot-css3d{position:absolute;inset:0;pointer-events:none}
+.boot-terminal-surface{width:1000px;height:700px;overflow:hidden;background:#211f1d;border-radius:12px;pointer-events:auto;color:#e5ddd3;font-family:Consolas,'Courier New',monospace;backface-visibility:hidden;text-align:left}
+.boot-window-chrome{min-height:70px;padding:18px 27px;display:flex;align-items:center;gap:25px;background:#332f2b;font:22px/1.4 Consolas,monospace;color:#b9ada0}
+.boot-window-dots{display:flex;gap:12px}.boot-window-dots>i{width:12px;height:12px;border-radius:50%;background:#ff6259}.boot-window-dots>i:nth-child(2){background:#ddb96a}.boot-window-dots>i:nth-child(3){background:#dbf967}
+.boot-terminal-badge{margin-left:auto;color:#dbf967;font-size:15px;letter-spacing:2px}
+.boot-terminal-body{padding:38px 38px 20px}
+.boot-terminal-title{font-family:'Barlow',sans-serif;font-size:48px;letter-spacing:-1.8px;font-weight:800;color:#f6f4f2;line-height:1;margin-bottom:26px}
+.boot-terminal-title>span{color:#ff6259}
+.boot-terminal-output{min-height:204px;max-height:270px;overflow:auto;font-size:24px;line-height:1.65;color:#c3b6a9;overflow-wrap:anywhere}
+.boot-terminal-output p{margin:0;font:inherit;color:inherit}
+.boot-command-form{display:flex;align-items:flex-end;gap:12px;margin-top:22px;min-height:82px;font-size:30px;line-height:1.4}
+.boot-command-form label{color:#dbf967;flex:none;position:relative;padding-top:30px}
+.boot-command-form label>span{position:absolute;left:0;top:0;white-space:nowrap;font-size:22px;color:#a99d90}
+.boot-command-form label>b{font-size:28px;font-weight:400}
+.boot-command-form input{display:block;min-width:0;flex:1;border:0;border-bottom:1px solid #65594f;background:transparent;font:30px/1.5 Consolas,monospace;color:#dbf967;caret-color:#ff6259;border-radius:0;padding:5px 0}
+.boot-command-form input::placeholder{color:#8d8278}.boot-command-form input:focus{outline:none;border-color:#dbf967}
+.boot-command-form button{background:#44382e;border:1px solid #71604f;color:#dbf967;font-size:32px;min-height:56px;min-width:66px;cursor:pointer}
+.boot-terminal-help{font:15px/1.5 Consolas,monospace;letter-spacing:1px;color:#9f9183;margin-top:24px}
+.boot-footer{position:absolute;bottom:22px;inset-inline:40px;display:flex;align-items:center;justify-content:space-between;gap:25px;z-index:3;font-size:9px;letter-spacing:1px;color:#a89f94;pointer-events:none}
+.boot-footer>p{font-size:12px;letter-spacing:0;color:#c8beb3}.boot-footer kbd{font-family:Consolas,monospace;color:#dbf967;background:#3a382c;padding:5px 8px;border-radius:3px}
+.boot-flat-workspace{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 1fr;gap:30px;padding:180px 7vw 150px;min-height:100svh;align-items:center}
+.boot-flat-workspace[hidden]{display:none}
+.boot-flat-editor{border:2px solid #99524a;background:#211f1d;border-radius:20px;overflow:hidden;transform:perspective(1000px) rotateY(4deg) rotateZ(-2deg);box-shadow:0 30px 80px #0004}
+.boot-flat-editor>.boot-window-chrome{font-size:14px;min-height:48px;padding:14px 24px}
+.boot-editor-copy{padding:32px 25px 42px;font:clamp(11px,1.2vw,18px)/2 Consolas,monospace;color:#c5b0d1}.boot-editor-copy>span{color:#928477}.boot-editor-copy p{font:inherit;color:inherit}.boot-editor-copy strong{display:block;color:#ff8b75;font-weight:400;margin-top:25px}
+.boot-terminal-fallback{border:2px solid #6a7548;border-radius:20px;overflow:hidden;box-shadow:0 30px 80px #0004}
+.boot-terminal-fallback .boot-terminal-surface{position:relative!important;width:100%!important;height:auto!important;transform:none!important;border-radius:0}
+.boot-terminal-fallback .boot-window-chrome{font-size:12px;min-height:46px;padding:12px 16px;gap:12px}.boot-terminal-fallback .boot-window-dots{gap:5px}.boot-terminal-fallback .boot-window-dots>i{width:7px;height:7px}.boot-terminal-fallback .boot-terminal-badge{font-size:8px;letter-spacing:1px}
+.boot-terminal-fallback .boot-terminal-body{padding:25px 22px}.boot-terminal-fallback .boot-terminal-title{font-size:30px;margin-bottom:20px}.boot-terminal-fallback .boot-terminal-output{font-size:12px;min-height:100px;max-height:160px}.boot-terminal-fallback .boot-command-form{font-size:17px;min-height:65px;margin-top:16px}.boot-terminal-fallback .boot-command-form input{font-size:17px}.boot-terminal-fallback .boot-command-form label{padding-top:24px}.boot-terminal-fallback .boot-command-form label>span{font-size:12px}.boot-terminal-fallback .boot-command-form label>b{font-size:18px}.boot-terminal-fallback .boot-command-form button{min-height:44px;min-width:44px;font-size:22px}.boot-terminal-fallback .boot-terminal-help{font-size:8px;margin-top:18px}
+@keyframes portfolio-enter{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}
+.portfolio-page{animation:portfolio-enter .7s cubic-bezier(.2,.8,.2,1) both}
+@media(max-width:900px){.boot-header{position:relative;padding:18px 22px}.boot-header>span:nth-child(2){display:none}.boot-stage{display:none}.boot-flat-workspace{min-height:0;padding:25px 22px 35px;grid-template-columns:1fr;gap:25px;max-width:650px;margin-inline:auto}.boot-flat-editor{transform:perspective(1000px) rotateX(3deg) rotateZ(-1.2deg)}.boot-editor-copy{font-size:13px;padding:23px}.boot-footer{position:relative;inset:auto;padding:0 22px 28px;justify-content:center;text-align:center;flex-wrap:wrap;gap:15px}.boot-footer>span{display:none}.boot-footer>p{font-size:11px}.boot-terminal-fallback .boot-terminal-title{font-size:33px}.boot-terminal-fallback .boot-terminal-output{font-size:13px;min-height:83px}.boot-terminal-fallback .boot-command-form input{font-size:18px}.boot-terminal-fallback .boot-terminal-help{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.boot-flat-editor{transform:none}.boot-stage{transition:none}.portfolio-page{animation:none}}
+
+.boot-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.boot-css3d{z-index:2}
+.boot-intro .boot-flat-editor{transform:none}
+.workspace-browser-surface{width:1440px;height:904px;pointer-events:none;overflow:hidden;background:transparent}
+.workspace-browser-window{width:100%;height:100%;display:flex;flex-direction:column;background:#252423;color:#dedbd5;border-radius:10px 10px 0 0;overflow:hidden;box-shadow:0 0 60px #0008;font:18px/1.4 Consolas,monospace}
+.workspace-browser-tabs{height:38px;flex-shrink:0;padding:9px 25px;background:#303033;font-size:15px;color:#d5d4d9}
+.workspace-browser-address{height:30px;flex-shrink:0;padding:4px 25px;background:#222225;color:#b8b7be;font-size:14px;border-bottom:1px solid #49464a}
+.workspace-browser-welcome{display:flex;align-items:center;justify-content:center;flex:1;min-height:0;background:#252423;color:#dbf967;font-family:Barlow,sans-serif;font-size:clamp(32px,9vw,135px);font-weight:800;letter-spacing:-.045em}
+.editor-preview-wrap{position:relative}.editor-preview-wrap>canvas{display:block;width:100%}
+.flat-browser-host{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.flat-browser-host .workspace-browser-surface{width:100%;height:100%;animation:browser-open .65s cubic-bezier(.2,.8,.2,1) both}
+.flat-browser-host .workspace-browser-tabs{height:23px;padding:4px 9px;font-size:8px}
+.flat-browser-host .workspace-browser-address{height:19px;padding:3px 9px;font-size:8px}
+@keyframes browser-open{from{opacity:0;transform:translateY(35px) scale(.72)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.flat-browser-host .workspace-browser-surface{animation:none}}

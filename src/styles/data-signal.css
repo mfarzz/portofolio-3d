@@ -1,0 +1,15 @@
+.portfolio-page{position:relative}
+.data-signal{position:absolute;inset:0;width:100%;height:100%;z-index:8;pointer-events:none;overflow:visible}
+.data-signal path[data-signal-route]{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.signal-sheath{stroke:#ff6259;stroke-opacity:.08;stroke-width:7px}
+.signal-track{stroke:#ff6259;stroke-opacity:.2;stroke-width:1px}
+.signal-halo{stroke:#ff3938;stroke-opacity:.18;stroke-width:7px}
+.signal-light{stroke:#ff4f48;stroke-opacity:.9;stroke-width:2.7px}
+.signal-core{stroke:#ffe5dd;stroke-opacity:.9;stroke-width:.85px}
+.signal-packet{fill:#ff514b}
+.signal-node-aura{fill:#ff514b05}.signal-node-ring{stroke:#ff625960;stroke-width:1;fill:#282323}.signal-node-core,.signal-end-core{fill:#8e514a}
+.signal-node[data-lit="true"] .signal-node-aura{fill:#ff514b1c}.signal-node[data-lit="true"] .signal-node-ring{stroke:#ff6259;fill:#482b27}.signal-node[data-lit="true"] .signal-node-core{fill:#ffe5dd}
+.signal-end-aura{fill:#ff514b08}.data-signal[data-connected="true"] .signal-end-aura{fill:#ff514b26}.data-signal[data-connected="true"] .signal-destination .signal-node-ring{stroke:#ff6259}.data-signal[data-connected="true"] .signal-end-core{fill:#fff0e8}
+@keyframes portfolio-enter{from{opacity:0}to{opacity:1}}
+@media(max-width:760px){.signal-sheath,.signal-halo{stroke-width:4px}.signal-light{stroke-width:1.8px}.signal-core{stroke-width:.6px}.signal-node-aura{r:7px}.signal-node-ring{r:3.5px}.signal-node-core{r:1.5px}.signal-source{opacity:.7}.signal-packet{opacity:.4}}
+@media(prefers-reduced-motion:reduce){.data-signal{opacity:.7}.signal-head,.signal-packet{display:none}}

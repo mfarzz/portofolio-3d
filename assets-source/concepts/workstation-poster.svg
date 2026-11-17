@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620" fill="none">
+  <defs>
+    <linearGradient id="frame" x1="210" y1="150" x2="540" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#50616c"/><stop offset=".45" stop-color="#253039"/><stop offset="1" stop-color="#121b22"/></linearGradient>
+    <linearGradient id="edge" x1="160" y1="430" x2="560" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#40545c"/><stop offset="1" stop-color="#172329"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="280" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#18272e"/><stop offset="1" stop-color="#0a1219"/></linearGradient>
+    <linearGradient id="platform" x1="190" y1="460" x2="430" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#1f3739"/><stop offset="1" stop-color="#111b23"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#73deca" stop-opacity=".22"/><stop offset="1" stop-color="#73deca" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a5f3df"/><stop offset="1" stop-color="#3e9e9c"/></linearGradient>
+    <pattern id="keys" width="22" height="19" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="16" height="12" rx="2" fill="#30424b" stroke="#5e7279" stroke-width=".6"/></pattern>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feGaussianBlur stdDeviation="15"/></filter>
+  </defs>
+  <ellipse cx="382" cy="502" rx="238" ry="100" fill="url(#glow)"/>
+  <ellipse cx="376" cy="521" rx="190" ry="35" fill="#000" opacity=".55" filter="url(#shadow)"/>
+  <!-- A perspective workstation illustration, temporary until the Blender asset is ready. -->
+  <path d="m108 467 283-100 239 120-282 106Z" fill="url(#platform)" stroke="#365356" stroke-width="1"/>
+  <path d="m108 467 240 116 282-96v10L348 603 108 478Z" fill="#142126" stroke="#2a4549"/>
+  <path d="m132 469 217 104 254-87" stroke="#77cfbd" stroke-opacity=".25"/>
+  <!-- Monitor stand -->
+  <path d="m362 359 29 10-7 72-29-11Z" fill="#273b43" stroke="#465c65"/>
+  <path d="m391 369 15-6-8 71-14 7Z" fill="#15252d"/>
+  <path d="m313 446 58-20 70 30-57 21Z" fill="#354b52" stroke="#5e767b"/>
+  <path d="m313 446 71 28 57-18v7l-57 22-71-30Z" fill="#18282f"/>
+  <!-- Monitor frame -->
+  <path d="m191 171 300 69c9 2 14 8 13 17l-8 183c0 10-6 13-15 11l-301-78c-7-2-11-7-10-15l7-175c0-10 5-14 14-12Z" fill="url(#frame)" stroke="#667d84" stroke-width="1.3"/>
+  <path d="m491 240 14-8c8 2 13 8 13 17l-8 184-14 7 8-183c1-9-4-15-13-17Z" fill="#17262e" stroke="#384b56"/>
+  <path d="m192 184 297 68-7 173-298-76Z" fill="#080f15" stroke="#74888d" stroke-opacity=".3"/>
+  <!-- Screen is a transformed, readable flat illustration -->
+  <g transform="matrix(.98 .23 -.036 .92 194 186)">
+    <rect width="297" height="174" fill="url(#glass)"/>
+    <rect width="297" height="20" fill="#203039"/>
+    <circle cx="10" cy="10" r="2.3" fill="#d98b83"/><circle cx="19" cy="10" r="2.3" fill="#d9bf83"/><circle cx="28" cy="10" r="2.3" fill="#83c9a2"/>
+    <text x="114" y="13" fill="#9fb3bb" font-family="monospace" font-size="6">workspace / hello.tsx</text>
+    <rect y="20" width="23" height="154" fill="#111d25"/>
+    <path d="m8 32 3-3 3 3-3 3Z" stroke="#75939a"/><rect x="8" y="44" width="7" height="7" rx="1" stroke="#75939a"/><path d="m8 63 6-6m-6 0 6 6" stroke="#75939a"/>
+    <rect x="24" y="21" width="79" height="17" fill="#1a2b33"/>
+    <text x="32" y="32" font-size="6" font-family="monospace" fill="#7de2d1">hello.tsx</text>
+    <g font-family="monospace" font-size="6.7">
+      <g fill="#56717a"><text x="31" y="52">01</text><text x="31" y="65">02</text><text x="31" y="78">03</text><text x="31" y="91">04</text><text x="31" y="104">05</text><text x="31" y="117">06</text><text x="31" y="130">07</text><text x="31" y="143">08</text></g>
+      <text x="51" y="52" fill="#7f98a4">// A little curiosity. A lot of building.</text>
+      <text x="51" y="70"><tspan fill="#c09edc">const </tspan><tspan fill="#d6e2e8">developer = {</tspan></text>
+      <text x="61" y="84"><tspan fill="#9cb8d2">name: </tspan><tspan fill="#97ddbb">'Muhammad Fariz'</tspan><tspan fill="#b8cdd4">,</tspan></text>
+      <text x="61" y="98"><tspan fill="#9cb8d2">focus: </tspan><tspan fill="#97ddbb">['web', 'mobile']</tspan><tspan fill="#b8cdd4">,</tspan></text>
+      <text x="61" y="112"><tspan fill="#9cb8d2">mindset: </tspan><tspan fill="#97ddbb">'always learning'</tspan></text>
+      <text x="51" y="126" fill="#d6e2e8">};</text>
+      <text x="51" y="148"><tspan fill="#7de2d1">build</tspan><tspan fill="#d6e2e8">(somethingMeaningful);</tspan></text>
+    </g>
+    <rect y="163" width="297" height="11" fill="#22453f"/><text x="9" y="171" fill="#a3d8c6" font-size="5" font-family="monospace">main*</text><text x="245" y="171" fill="#a3d8c6" font-size="5" font-family="monospace">TypeScript</text>
+  </g>
+  <circle cx="335" cy="399" r="2" fill="#7de2d1"/>
+  <!-- Keyboard -->
+  <path d="m180 447 117-40 151 69-115 43Z" fill="#17252e" stroke="#57717a"/>
+  <path d="m180 447 153 63 115-34v9l-115 43-153-71Z" fill="#0e1c24" stroke="#2b414c"/>
+  <g transform="matrix(.8 .35 -.8 .28 294 414)"><rect width="172" height="113" rx="5" fill="#1d2e36"/><rect x="6" y="7" width="161" height="80" fill="url(#keys)"/><rect x="39" y="89" width="90" height="12" rx="3" fill="#42565d" stroke="#68858a"/></g>
+  <!-- Trackpad -->
+  <path d="m456 485 44-15 39 17-44 17Z" fill="#30454c" stroke="#6c8588"/><path d="m456 485 39 16 44-14v5l-44 17-39-18Z" fill="#172a30"/>
+  <!-- Floating code panel -->
+  <g transform="matrix(.94 -.19 .02 1 469 132)">
+    <rect width="143" height="103" rx="8" fill="#17272d" stroke="#5d9291" stroke-opacity=".75"/>
+    <path d="M0 26h143" stroke="#354b50"/>
+    <circle cx="13" cy="13" r="2" fill="#7de2d1"/><text x="23" y="16" font-family="monospace" font-size="7" fill="#adc6c9">the next idea.ts</text>
+    <path d="m32 46-10 9 10 9m48-18 10 9-10 9m-22-25-9 32" stroke="url(#accent)" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M103 48h22m-22 9h16M17 83h77" stroke="#4f7277" stroke-width="3" stroke-linecap="round"/><path d="M102 83h21" stroke="#77cdbb" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Floating mobile panel -->
+  <g transform="matrix(.94 .24 -.08 1 124 266)">
+    <rect width="76" height="124" rx="11" fill="#17252d" stroke="#5b7e88"/>
+    <rect x="6" y="7" width="64" height="108" rx="7" fill="#0e1d26"/>
+    <rect x="25" y="10" width="25" height="4" rx="2" fill="#2e454d"/>
+    <rect x="14" y="27" width="48" height="27" rx="4" fill="#244d49"/>
+    <path d="m21 45 8-8 8 4 17-9" stroke="#7de2d1" stroke-width="1.5"/>
+    <path d="M15 65h41m-41 8h28" stroke="#48646d" stroke-width="3" stroke-linecap="round"/>
+    <rect x="14" y="86" width="48" height="15" rx="3" fill="#83d9c6"/><path d="M27 94h23" stroke="#2d6058" stroke-width="2"/>
+  </g>
+  <!-- Small spatial details -->
+  <path d="m533 321 14-5 12 7-14 5Zm0 0v15l12 7v-15m0 15 14-5v-15" fill="#244441" stroke="#7adbc6" stroke-opacity=".5"/>
+  <path d="M227 131v12m-6-6h12M567 407v10m-5-5h10" stroke="#78b4aa" stroke-opacity=".6"/>
+  <circle cx="582" cy="282" r="2" fill="#79cabb"/><circle cx="215" cy="406" r="2" fill="#79cabb"/>
+  <path d="M221 183v-18h43m260 287v18h-36" stroke="#4e7d78" stroke-dasharray="3 5"/>
+</svg>

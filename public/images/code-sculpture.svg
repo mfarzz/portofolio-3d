@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" fill="none">
+  <defs>
+    <linearGradient id="front" x1="180" y1="200" x2="600" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#ffc9a8"/><stop offset=".25" stop-color="#ff8072"/><stop offset=".6" stop-color="#ff4d45"/><stop offset="1" stop-color="#b32b2a"/></linearGradient>
+    <linearGradient id="side" x1="100" y1="200" x2="630" y2="650" gradientUnits="userSpaceOnUse"><stop stop-color="#e14a3b"/><stop offset=".5" stop-color="#9b292b"/><stop offset="1" stop-color="#3c171c"/></linearGradient>
+    <linearGradient id="slash" x1="330" y1="130" x2="420" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#fff5dd"/><stop offset=".38" stop-color="#d6d5bd"/><stop offset="1" stop-color="#706c61"/></linearGradient>
+    <linearGradient id="slashEdge" x1="340" y1="180" x2="430" y2="580" gradientUnits="userSpaceOnUse"><stop stop-color="#b8b79a"/><stop offset="1" stop-color="#55534a"/></linearGradient>
+    <radialGradient id="sphere" cx=".3" cy=".25" r=".75"><stop stop-color="#f1ffb0"/><stop offset=".4" stop-color="#d1ed66"/><stop offset=".8" stop-color="#8a9e43"/><stop offset="1" stop-color="#46512b"/></radialGradient>
+    <linearGradient id="cube" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb37f"/><stop offset="1" stop-color="#ef6c41"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#fb6248" stop-opacity=".09"/><stop offset="1" stop-color="#fb6248" stop-opacity="0"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  </defs>
+  <!-- Original code-native poster for phase 1. Replace with Blender model in phase 3/4. -->
+  <ellipse cx="490" cy="455" rx="365" ry="350" fill="url(#halo)"/>
+  <ellipse cx="478" cy="686" rx="222" ry="36" fill="#100e0c" opacity=".65" filter="url(#blur)"/>
+  <g transform="rotate(-23 470 430)">
+    <!-- Tangential orbit, behind the sculpture -->
+    <ellipse cx="460" cy="443" rx="327" ry="232" transform="rotate(-27 460 443)" stroke="#bcb4a1" stroke-opacity=".28"/>
+    <ellipse cx="460" cy="443" rx="340" ry="244" transform="rotate(-27 460 443)" stroke="#bcb4a1" stroke-opacity=".08"/>
+    <!-- Sculpted opening bracket: extruded side faces -->
+    <path d="m329 191 38 46-130 135-38-46Z" fill="#f28a70"/>
+    <path d="m199 326 38 46 130 132-38-46Z" fill="url(#side)"/>
+    <path d="m329 458 38 46 68-65-38-46Z" fill="#85282b"/>
+    <path d="m397 393 38 46-69-67-38-46Z" fill="#5c2025"/>
+    <path d="m328 326 38 46 69-69-38-46Z" fill="#97342f"/>
+    <path d="m397 257 38 46-68-66-38-46Z" fill="#ff9980"/>
+    <path d="m329 191-130 135 130 132 68-65-69-67 69-69Z" fill="url(#front)" stroke="#ffbf9d" stroke-opacity=".25" stroke-width="1.5"/>
+    <path d="m327 207-115 119 115 115" stroke="#ffd2b2" stroke-opacity=".35"/>
+    <!-- Back portion of the closing bracket -->
+    <path d="m577 238 39 46 135 134-39-46Z" fill="#ff9070"/>
+    <path d="m712 372 39 46-135 134-39-46Z" fill="url(#side)"/>
+    <path d="m577 506 39 46-69-64-39-46Z" fill="#822529"/>
+    <path d="m508 442 39 46 69-70-39-46Z" fill="#ba3933"/>
+    <path d="m577 372 39 46-69-69-39-46Z" fill="#80272b"/>
+    <path d="m508 303 39 46 69-65-39-46Z" fill="#e85d4c"/>
+    <path d="m577 238 135 134-135 134-69-64 69-70-69-69Z" fill="url(#front)" stroke="#ffa489" stroke-opacity=".35"/>
+    <path d="m582 255 118 117-118 119" stroke="#ffbea0" stroke-opacity=".35"/>
+    <!-- The center slash is a separate solid ivory object -->
+    <path d="m471 182 38 44-76 379-38-44Z" fill="url(#slashEdge)"/>
+    <path d="m395 561 38 44-70-15-38-44Z" fill="#49483f"/>
+    <path d="m401 167 70 15-76 379-70-15Z" fill="url(#slash)" stroke="#f4eed8" stroke-opacity=".45"/>
+    <path d="m405 179 51 11-70 356" stroke="#fff9e7" stroke-opacity=".45"/>
+    <!-- Small etched marks -->
+    <path d="m344 257 12 12m-23-1 12 12m-23-1 12 12m262 136 12 12m-23-1 12 12m-23-1 12 12" stroke="#b34339" stroke-width="2"/>
+  </g>
+  <!-- Satellite sphere and cube -->
+  <ellipse cx="696" cy="645" rx="58" ry="13" fill="#070909" opacity=".35" filter="url(#soft)"/>
+  <circle cx="694" cy="591" r="57" fill="url(#sphere)"/>
+  <path d="m728 182 43-24 45 27-43 24Z" fill="#ffbe91"/>
+  <path d="m728 182 45 27v50l-45-27Z" fill="url(#cube)"/>
+  <path d="m773 209 43-24v50l-43 24Z" fill="#b35436"/>
+  <path d="m736 186 37 22 34-19" stroke="#ffd6ad" stroke-opacity=".5"/>
+  <circle cx="269" cy="600" r="9" fill="#f2eddb"/>
+  <path d="M581 112v16m-8-8h16M180 470v14m-7-7h14" stroke="#aba397" stroke-opacity=".65"/>
+  <circle cx="733" cy="395" r="3" fill="#ff8a6d"/>
+</svg>

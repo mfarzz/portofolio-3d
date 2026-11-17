@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#252423"/>
+  <path d="M58 94h1084M58 552h1084" stroke="#494643"/>
+  <g font-family="Arial, sans-serif" font-weight="800">
+    <text x="58" y="71" font-size="43" font-style="italic" fill="#f6f4f2">fariz<tspan fill="#ff6259">*</tspan></text>
+    <text x="1142" y="65" text-anchor="end" fill="#b8b5b1" font-size="14" letter-spacing="2">APPLICATION DEVELOPER</text>
+    <text x="58" y="247" fill="#f6f4f2" font-size="120" letter-spacing="-8">CODE.</text>
+    <text x="58" y="361" fill="#ff6259" font-size="120" letter-spacing="-8">CREATE.</text>
+    <text x="58" y="475" fill="none" stroke="#f6f4f2" stroke-width="1.5" font-size="120" letter-spacing="-8">REPEAT.</text>
+    <text x="58" y="593" fill="#f6f4f2" font-size="19" letter-spacing="1">MUHAMMAD FARIZ</text>
+    <text x="1142" y="593" text-anchor="end" fill="#b8b5b1" font-size="16">WEB / DESKTOP / AI</text>
+  </g>
+  <g transform="translate(925 325)">
+    <circle r="155" fill="none" stroke="#756f63"/>
+    <path d="m-60-56-60 56 60 56m120-112 60 56-60 56" fill="none" stroke="#ff6259" stroke-width="29" stroke-linejoin="round"/>
+    <path d="m24-94-48 188" stroke="#f6f4f2" stroke-width="24"/>
+    <circle cx="115" cy="118" r="30" fill="#dbf967"/>
+    <rect x="-119" y="-158" width="35" height="35" rx="3" fill="#f1b391" transform="rotate(-12)"/>
+  </g>
+</svg>
